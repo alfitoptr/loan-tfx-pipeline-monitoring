@@ -31,19 +31,14 @@ This project implements a machine learning pipeline using TensorFlow Extended (T
     - `tensorflow-serving-dashboard.json`: Dashboard configuration for TensorFlow Serving in Grafana.
     - `prometheus-datasource.yml`: Data source configuration for Prometheus in Grafana.
 
-#### 6. **output/**
-- Stores the output directory of the TFX pipeline, including:
-  - `serving_model`: Saved models ready for deployment.
-  - `tuning_results`: Results from the hyperparameter tuning process.
-
-#### 7. **Dockerfile**
+#### 6. **Dockerfile**
 - Dockerfile for deploying the trained model to the cloud using [Railway](https://railway.app/).
 
-#### 8. **loan_pipeline.ipynb**
+#### 7. **loan_pipeline.ipynb**
 - Jupyter Notebook containing the TensorFlow Extended pipeline.
   - Implements components for data ingestion, transformation, model training, evaluation, and deployment.
 
-#### 9. **test.ipynb**
+#### 8. **test.ipynb**
 - Jupyter Notebook for testing the API of the deployed model.
   - Validates the integration and prediction service deployed on Railway.
 
