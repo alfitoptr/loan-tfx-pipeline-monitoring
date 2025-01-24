@@ -17,28 +17,25 @@ This project implements a machine learning pipeline using TensorFlow Extended (T
 - Dataset used: [Loan Approval Classification Dataset](https://www.kaggle.com/datasets/taweilo/loan-approval-classification-data).
   - **Description**: Synthetic dataset based on credit risk data, consisting of 45,000 records and 14 variables.
 
-#### 3. **images/**
-- Contains image files (not relevant for the pipeline).
-
-#### 4. **modules/**
+#### 3. **modules/**
 - **loan_transform.py**: Module for the Transform component of TFX.
 - **loan_trainer.py**: Module for hyperparameter tuning and model training within TFX.
 
-#### 5. **monitoring/**
+#### 4. **monitoring/**
 - Dockerfile and configuration for monitoring services.
   - **prometheus.yml**: Configuration file for Prometheus.
   - **Grafana/**: Contains the following files:
     - `tensorflow-serving-dashboard.json`: Dashboard configuration for TensorFlow Serving in Grafana.
     - `prometheus-datasource.yml`: Data source configuration for Prometheus in Grafana.
 
-#### 6. **Dockerfile**
+#### 5. **Dockerfile**
 - Dockerfile for deploying the trained model to the cloud using [Railway](https://railway.app/).
 
-#### 7. **loan_pipeline.ipynb**
+#### 6. **loan_pipeline.ipynb**
 - Jupyter Notebook containing the TensorFlow Extended pipeline.
   - Implements components for data ingestion, transformation, model training, evaluation, and deployment.
 
-#### 8. **test.ipynb**
+#### 7. **test.ipynb**
 - Jupyter Notebook for testing the API of the deployed model.
   - Validates the integration and prediction service deployed on Railway.
 
