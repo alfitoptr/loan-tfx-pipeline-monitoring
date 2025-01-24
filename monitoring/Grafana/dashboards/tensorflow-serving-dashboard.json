@@ -1,0 +1,31 @@
+{
+    "dashboard": {
+      "id": null,
+      "title": "TensorFlow Serving Metrics",
+      "panels": [
+        {
+          "type": "graph",
+          "title": "Request Latency",
+          "targets": [
+            {
+              "expr": "tensorflow_serving_request_latency",
+              "legendFormat": "{{model_name}}",
+              "refId": "A"
+            }
+          ]
+        },
+        {
+          "type": "graph",
+          "title": "Request Count",
+          "targets": [
+            {
+              "expr": "tensorflow_serving_request_count",
+              "legendFormat": "{{model_name}}",
+              "refId": "B"
+            }
+          ]
+        }
+      ]
+    }
+  }
+  
